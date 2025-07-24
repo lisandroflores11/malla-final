@@ -1,0 +1,84 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #E8EBED; /* Meringue */
+  margin: 0;
+  padding: 20px;
+  color: #2C3F70; /* Blueberry */
+}
+
+h1 {
+  text-align: center;
+  color: #A5231C; /* Strawberry */
+  margin-bottom: 0;
+}
+
+h2.university {
+  text-align: center;
+  color: #2C3F70; /* Blueberry */
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+}
+
+.year {
+  background-color: #C8D4E5; /* Buttercream */
+  border-radius: 12px;
+  padding: 20px;
+  min-width: 320px;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.cycle {
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  color: #2C3F70; /* Blueberry */
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 8px 0;
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+li.locked {
+  background-color: #2C3F70; /* Blueberry */
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+li.available {
+  background-color: #E8EBED; /* Meringue */
+  color: #2C3F70;
+  border: 1px solid #2C3F70;
+}
+
+li.completed {
+  text-decoration: line-through;
+  background-color: #8089D2; /* Violet */
+  color: white;
+}
+
+li:hover:not(.locked) {
+  background-color: #2C3F70; /* Blueberry */
+  color: white;
+}

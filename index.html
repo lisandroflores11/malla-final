@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Licenciatura en Lenguas Modernas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Licenciatura en Lenguas Modernas: Especialidad en Francés e Inglés</h1>
+  <h2 class="university">Universidad de El Salvador</h2>
+  <div class="grid">
+    <!-- CONTENIDO DE LA MALLA -->
+  </div>
+
+  <script>
+    const subjects = document.querySelectorAll("li");
+
+    subjects.forEach(subject => {
+      updateStatus(subject);
+
+      subject.addEventListener("click", () => {
+        const prereq = subject.dataset.prereq;
+        if (!prereq || checkPrereqs(prereq)) {
+          subject.classList.toggle("completed");
+          updateStatus(subject);
+          subjects.forEach(updateStatus);
+        } else {
+          alert("Aún no has cursado los prerrequisitos: " + prereq);
+        }
+      });
+    });
+
+    function checkPrereqs(prereqStr) {
+      const prereqs = prereqStr.split(",").map(p => p.trim());
+      const completed = Array.from(document.querySelectorAll("li.completed"))
+        .map(el => el.textContent.trim());
+      return prereqs.every(pr => completed.includes(pr));
+    }
+
+    function updateStatus(subject) {
+      const prereq = subject.dataset.prereq;
+      const isCompleted = subject.classList.contains("completed");
+      const allCompleted = !prereq || checkPrereqs(prereq);
+
+      subject.classList.remove("available", "locked", "in-progress");
+
+      if (isCompleted) {
+        subject.classList.add("completed");
+      } else if (allCompleted) {
+        subject.classList.add("available");
+      } else {
+        subject.classList.add("locked");
+      }
+    }
+  </script>
+</body>
+</html>
