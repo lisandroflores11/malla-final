@@ -9,7 +9,123 @@
   <h1>Licenciatura en Lenguas Modernas: Especialidad en Francés e Inglés</h1>
   <h2 class="university">Universidad de El Salvador</h2>
   <div class="grid">
-    <!-- CONTENIDO DE LA MALLA -->
+    <!-- <!-- Año 1 -->
+<div class="year">
+  <h2>1° Año</h2>
+  <div class="cycle">
+    <h3>Ciclo 1</h3>
+    <ul>
+      <li onclick="toggle(this)" data-prereq="">Francés Intensivo I</li>
+      <li onclick="toggle(this)" data-prereq="">Inglés Básico Intensivo</li>
+      <li onclick="toggle(this)" data-prereq="">Psicopedagogía I</li>
+      <li onclick="toggle(this)" data-prereq="">Teoría de la Comunicación I</li>
+    </ul>
+  </div>
+  <div class="cycle">
+    <h3>Ciclo 2</h3>
+    <ul>
+      <li onclick="toggle(this)" data-prereq="Psicopedagogía I">Didáctica General I</li>
+      <li onclick="toggle(this)" data-prereq="Francés Intensivo I">Francés Intensivo II</li>
+      <li onclick="toggle(this)" data-prereq="Inglés Básico Intensivo">Inglés Intermedio I</li>
+      <li onclick="toggle(this)" data-prereq="Teoría de la Comunicación I">Teoría de la Comunicación II</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Año 2 -->
+<div class="year">
+  <h2>2° Año</h2>
+  <div class="cycle">
+    <h3>Ciclo 3</h3>
+    <ul>
+      <li onclick="toggle(this)" data-prereq="Francés Intensivo II">Francés Intensivo III</li>
+      <li onclick="toggle(this)" data-prereq="Inglés Intermedio I">Gramática Inglesa I</li>
+      <li onclick="toggle(this)" data-prereq="Inglés Intermedio I">Inglés Intermedio II</li>
+    </ul>
+  </div>
+  <div class="cycle">
+    <h3>Ciclo 4</h3>
+    <ul>
+      <li onclick="toggle(this)" data-prereq="Francés Intensivo III">Francés Avanzado</li>
+      <li onclick="toggle(this)" data-prereq="Francés Intensivo III">Gramática Francesa I</li>
+      <li onclick="toggle(this)" data-prereq="Gramática Inglesa I">Gramática Inglesa II</li>
+      <li onclick="toggle(this)" data-prereq="Inglés Intermedio II">Inglés Avanzado I</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Año 3 -->
+<div class="year">
+  <h2>3° Año</h2>
+  <div class="cycle">
+    <h3>Ciclo 5</h3>
+    <ul>
+      <li onclick="toggle(this)" data-prereq="Francés Avanzado">Expresión Oral en Francés</li>
+      <li onclick="toggle(this)" data-prereq="Gramática Francesa I">Gramática Francesa II</li>
+      <li onclick="toggle(this)" data-prereq="Inglés Avanzado I">Inglés Avanzado II</li>
+      <li onclick="toggle(this)" data-prereq="Inglés Intermedio I">Pronunciación en Inglés</li>
+    </ul>
+  </div>
+  <div class="cycle">
+    <h3>Ciclo 6</h3>
+    <ul>
+      <li onclick="toggle(this)" data-prereq="Expresión Oral en Francés, Didáctica General I">Didáctica del Idioma Francés</li>
+      <li onclick="toggle(this)" data-prereq="Francés Avanzado">Fonética Francesa</li>
+      <li onclick="toggle(this)" data-prereq="Inglés Avanzado II">Lectura y Conversación en Inglés I</li>
+      <li onclick="toggle(this)" data-prereq="Gramática Francesa II">Ortografía y Estilística Francesa</li>
+      <li onclick="toggle(this)" data-prereq="Expresión Oral en Francés, Teoría de la Comunicación II">Relaciones Públicas</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Año 4 -->
+<div class="year">
+  <h2>4° Año</h2>
+  <div class="cycle">
+    <h3>Ciclo 7</h3>
+    <ul>
+      <li onclick="toggle(this)" data-prereq="Gramática Inglesa II">Composición Inglesa I</li>
+      <li onclick="toggle(this)" data-prereq="Fonética Francesa, Ortografía y Estilística Francesa, Expresión Oral en Francés, Gramática Francesa II">El Francés y el Comercio</li>
+      <li onclick="toggle(this)" data-prereq="Expresión Oral en Francés">Introducción a la Civilización Francesa</li>
+      <li onclick="toggle(this)" data-prereq="Lectura y Conversación en Inglés I">Lectura y Conversación en Inglés II</li>
+    </ul>
+  </div>
+  <div class="cycle">
+    <h3>Ciclo 8</h3>
+    <ul>
+      <li onclick="toggle(this)" data-prereq="Didáctica del Idioma Francés, Didáctica General I">Didáctica del Idioma Inglés I</li>
+      <li onclick="toggle(this)" data-prereq="Fonética Francesa, Ortografía y Estilística Francesa, Expresión Oral en Francés, Gramática Francesa II">El Francés y el Turismo</li>
+      <li onclick="toggle(this)" data-prereq="">Gramática Avanzada</li>
+      <li onclick="toggle(this)" data-prereq="Expresión Oral en Francés, Gramática Francesa II">Literatura Francesa I</li>
+      <li onclick="toggle(this)" data-prereq="Relaciones Públicas, Teoría de la Comunicación II">Opinión Pública</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Año 5 -->
+<div class="year">
+  <h2>5° Año</h2>
+  <div class="cycle">
+    <h3>Ciclo 9</h3>
+    <ul>
+      <li onclick="toggle(this)" data-prereq="Fonética Francesa, Ortografía y Estilística Francesa, Expresión Oral en Francés, Gramática Francesa II">El Francés y la Traducción</li>
+      <li onclick="toggle(this)" data-prereq="Pronunciación en Inglés">Introducción a la Lingüística</li>
+      <li onclick="toggle(this)" data-prereq="Literatura Francesa I">Literatura Francesa II</li>
+      <li onclick="toggle(this)" data-prereq="Gramática Avanzada">Seminario I</li>
+    </ul>
+  </div>
+  <div class="cycle">
+    <h3>Ciclo 10</h3>
+    <ul>
+      <li onclick="toggle(this)" data-prereq="Didáctica del Idioma Inglés I, Didáctica General I">Didáctica del Idioma Inglés II</li>
+      <li onclick="toggle(this)" data-prereq="Introducción a la Lingüística">Fonología y Morfología Inglesa</li>
+      <li onclick="toggle(this)" data-prereq="Opinión Pública, Teoría de la Comunicación II">Historia de El Salvador y Centroamérica</li>
+      <li onclick="toggle(this)" data-prereq="Gramática Avanzada">Literatura en Inglés I</li>
+      <li onclick="toggle(this)" data-prereq="Seminario I">Seminario II</li>
+    </ul>
+  </div>
+</div>
+ -->
   </div>
 
   <script>
